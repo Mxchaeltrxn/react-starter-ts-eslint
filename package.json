@@ -12,6 +12,12 @@
     "lint:check:es": "eslint src/",
     "format:all": "yarn run format:es && yarn run lint:es"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
