@@ -1,8 +1,20 @@
-import "./App.css"
+import * as React from "react"
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div>Hello</div>
+    <>
+      <style jsx>{`
+        div {
+          padding: 20px;
+          background: #eee;
+          color: #999;
+        }
+        .large {
+          padding: 50px;
+        }
+      `}</style>
+      <div>Hello</div>
+    </>
   )
 }
 
